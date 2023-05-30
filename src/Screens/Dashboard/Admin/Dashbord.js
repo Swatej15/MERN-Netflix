@@ -39,13 +39,13 @@ function Dashboard() {
                     </div>
                     <div className='col-span-3'>
                         <h2>{data.title}</h2>
-                        <p className=' mt-2 font-bold'>{data.total}</p>
+                        <p className='mt-2 font-bold'>{data.total}</p>
                     </div>
                 </div>
             ))}
         </div>
         <h3 className='text-md font-medium my-6 text-border'>Recent Movies</h3>
-        <Table data={Movies.slice(0 ,5)} admin={true} />
+        <Table data={Movies.slice(0,5)} admin={true} />
     </SideBar>
   )
 }

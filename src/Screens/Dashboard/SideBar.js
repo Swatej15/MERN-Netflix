@@ -1,4 +1,4 @@
-import React, { children } from 'react'
+import React from 'react'
 import { BsFillGridFill } from 'react-icons/bs'
 import { FaHeart, FaListAlt, FaUsers } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/fi'
@@ -8,12 +8,12 @@ import Layout from '../../Layout/Layout'
 import { NavLink } from 'react-router-dom'
 
 
-function SideBar() {
+function SideBar( { children } ) {
 
     const SideLinks =[
         {
             name:'Dashboard',
-            link:'dashboard',
+            link:'/dashboard',
             icon:BsFillGridFill,
         },
         {
@@ -43,7 +43,7 @@ function SideBar() {
         },
         {
             name:'Favorite Movies',
-            link:'/favorite',
+            link:'/favorites',
             icon:FaHeart,
         },
         {
@@ -53,12 +53,12 @@ function SideBar() {
         },
     ] 
 
-const active = 'bg-dryGray text-subMain';
-const hover = 'hover:text-white hover:bg-main';
-const inActive = 
-    'rounded font-medium text-sm transition flex gap-3 items-center p-4';
-const Hover = ({isActive}) =>
-    isActive ? `${active} ${inActive}` : `${inActive} ${hover}`;
+    const active = 'bg-dryGray text-subMain';
+    const hover = 'hover:text-white hover:bg-main';
+    const inActive = 
+        'rounded font-medium text-sm transitions flex gap-3 items-center p-4';
+    const Hover = ({isActive}) =>
+        isActive ? `${active} ${inActive}` : `${inActive} ${hover}`;
  
 
     return (

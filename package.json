@@ -1,6 +1,5 @@
 {
   "name": "netflix",
-  "homepage": "https://Swatej15.github.io/MERN-Netflix",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

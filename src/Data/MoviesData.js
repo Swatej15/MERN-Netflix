@@ -147,7 +147,7 @@ export default Movies;
 
 export const UsersData =[
     {
-        fullName:'',
+        fullName:'Black Panther',
         image:'c1.jpeg',
         email:'Blackpather@gmail.com',
         rate:'3.5',

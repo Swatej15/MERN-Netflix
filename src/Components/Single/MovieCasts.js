@@ -41,14 +41,15 @@ function MovieCasts() {
             >
                 { UsersData.map((user,i) => (
                         <SwiperSlide key={i}>
-                            <div className='w-full p-3 italic text-xs text-text rounded flex-colo bg-dry border border-gray-800'>
-                                <img 
-                                    src={`/images/${user.image}`} 
-                                    alt={user.fullName} 
-                                    className=' w-full h-64 object-cover rounded mb-2' />
-                                {/* <p>{user?.fullName}</p> */}
-                            </div>
+                        <div className='w-full p-3 italic text-xs text-text rounded flex-col bg-dry border border-gray-800'>
+                          <img 
+                            src={`/images/${user.image}`} 
+                            alt={user.fullName} 
+                            className='w-full h-64 object-cover rounded mb-2' />
+                          <p className='text-center'>{user?.fullName}</p>
+                        </div>
                         </SwiperSlide>
+                      
                     ))
                 }
 

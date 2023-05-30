@@ -25,12 +25,17 @@ function Categories() {
         <CategoryModal modalOpen={modalOpen} setModalOpen={setModalOpen} category={category}/>
       <div className='flex flex-col gap-6'>
         <div className='flex-btn gap-2'>
-            <h2 className='text-xl font-bold'>Categories</h2>
-            <button 
-            onClick={() => setModalOpen(true)}
-            className='bg-subMain font-medium flex-rows gap-4 transition hover:bg-main border border-subMain text-White py-6 px-6 rounded'>
-                <HiPlusCircle /> Create
-            </button>
+            <h2 className='text-xl font-bold '>Categories</h2>
+            <div className='flex-grow' /> 
+            
+            <button
+  onClick={() => setModalOpen(true)}
+  className='bg-subMain font-medium flex items-center gap-2 transition hover:bg-main border border-subMain text-white py-3 px-5 rounded'
+>
+  <HiPlusCircle /> <span>Create</span>
+</button>
+
+            
         </div>
 
         <Table2 data={CategoriesData} users={false} OnEditFunction={OnEditFunction} /> 

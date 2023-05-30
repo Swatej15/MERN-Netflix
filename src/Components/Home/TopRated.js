@@ -70,7 +70,7 @@ import Rating from '../Stars';
               ))
             }
             </Swiper>
-            <div className='w-full px-1 flex-rows gap-6 pt-12'>
+            <div className='w-full px-1 flex justify-center flex-rows gap-6 pt-12'>
               <button className={classNames} ref={(node) => setPrevtEL(node)}>
                 <BsCaretLeftFill />
               </button>
